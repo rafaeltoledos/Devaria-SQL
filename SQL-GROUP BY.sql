@@ -1,24 +1,24 @@
 
 SELECT
     COUNT(*),
-    cidade
+    Cidade
 FROM
     Cliente
 GROUP BY
-    cidade
+    Cidade
 
 SELECT
     COUNT(*),
-    tipo
+    Tipo
 FROM
-    forma_pagamento
+    Forma_Pagamento
 GROUP BY
-    tipo
+    Tipo
 
 SELECT
-    SUM(VALOR) as valor_mes,
+    SUM(Valor) as Valor_Mes,
     MONTH(DATA)
 FROM
-    PEDIDO_VENDA
+    Pedido_Venda
 GROUP BY
     MONTH(DATA)

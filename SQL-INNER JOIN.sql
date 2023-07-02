@@ -1,17 +1,17 @@
 SELECT
-    Cliente.nome,
-    cliente.estado,
-    fidelidade.pontos
+    Cliente.Nome,
+    Cliente.Estado,
+    Fidelidade.Pontos
 FROM
-    cliente
-    INNER JOIN fidelidade on cliente.codigo = fidelidade.codigo_cliente
+    Cliente
+    INNER JOIN Fidelidade on Cliente.Codigo = Fidelidade.Codigo_Cliente
 
 SELECT
-    c.nome,
-    f.pontos
+    C.Nome,
+    F.Pontos
 FROM
-    cliente as C
-    INNER JOIN fidelidade as f on c.codigo = f.codigo_cliente
+    Cliente as C
+    INNER JOIN Fidelidade as F on C.Codigo = F.Codigo_Cliente
 
 SELECT
     SUM(Item_Pedido_Venda.Quantidade),

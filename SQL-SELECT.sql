@@ -1,19 +1,19 @@
 SELECT
-    valor - valor_imposto
+    Valor - Valor_Imposto
 FROM
-    pedido_venda
+    Pedido_Venda
 
 SELECT
-    valor_unitario + valor_imposto
+    Valor_Unitario + Valor_Imposto
 FROM
-    item_pedido_venda
+    Item_Pedido_Venda
 
 SELECT
-    valor + valor_imposto
+    Valor + Valor_Imposto
 FROM
-    pedido_venda
+    Pedido_Venda
 
 SELECT
-    SUM(pontos) / 2
+    SUM(Pontos) / 2
 FROM
-    fidelidade
+    Fidelidade
